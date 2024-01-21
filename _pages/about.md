@@ -1,3 +1,4 @@
+<!-- prettier-ignore-start -->
 ---
 layout: about
 title:
@@ -21,3 +22,4 @@ Hi! I am a PhD student at [Georgia Tech](https://gatech.edu) working on 3D compu
 Prior to this, I worked on long-range perception problems for autonomous driving at [Waymo](https://waymo.com/). I earned my Master's from Georgia Tech in 2020, during which I worked with [Prof. Frank Dellaert](https://www.cc.gatech.edu/~dellaert/) on SfM problems using [GTSAM](https://github.com/borglab/gtsam). I also worked with the [RAIL lab](http://rail.gatech.edu/) during the [FetchIt! challenge](https://research.gatech.edu/georgia-tech-team-wins-new-fetch-robot-icras-fetchit-mobile-manipulation-challenge) at ICRA 2019. I spent a wonderful summer as an intern at [Blue River Technology](https://bluerivertechnology.com/), which also taught me a bit about agriculture.
 
 Please feel free to send me an email if you're interested in research collaborations!
+<!-- prettier-ignore-start -->
