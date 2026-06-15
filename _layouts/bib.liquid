@@ -70,25 +70,25 @@
         {% endif %}
 
         {% if forloop.length > 1 %}
-          {% if forloop.first == false %}{{- ', ' -}}{% endif %}
-          {% if forloop.last and author_array_limit == author_array_size %}{{- 'and ' -}}{% endif %}
-        {% endif %}
-        {% if author_is_self %}
+          {% if forloop.first == false %}{{ ', ' }}{% endif %}
+          {% if forloop.last and author_array_limit == author_array_size %}and {% endif %}
+        {% endif -%}
+        {%- if author_is_self -%}
           <em>
-            {{ author.first | strip }}
-            {{ author.last | strip }}
+            {{- author.first | strip }}
+            {{ author.last | strip -}}
           </em>
-        {% else %}
-          {% if coauthor_url %}
+        {%- else -%}
+          {%- if coauthor_url -%}
             <a href="{{coauthor_url}}">
-              {{ author.first | strip }}
-              {{ author.last | strip }}
+              {{- author.first | strip }}
+              {{ author.last | strip -}}
             </a>
-          {% else %}
+          {%- else -%}
             {{ author.first | strip }}
             {{ author.last | strip }}
-          {% endif %}
-        {% endif %}
+          {%- endif -%}
+        {%- endif %}
       {% endfor %}
       {% assign more_authors = author_array_size | minus: author_array_limit %}
 
