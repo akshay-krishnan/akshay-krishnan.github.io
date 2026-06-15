@@ -75,18 +75,18 @@
         {% endif %}
         {% if author_is_self %}
           <em>
-            {{- author.first | strip -}}
-            {{- author.last | strip -}}
+            {{ author.first | strip }}
+            {{ author.last | strip }}
           </em>
         {% else %}
           {% if coauthor_url %}
             <a href="{{coauthor_url}}">
-              {{- author.first | strip -}}
-              {{- author.last | strip -}}
+              {{ author.first | strip }}
+              {{ author.last | strip }}
             </a>
           {% else %}
-            {{- author.first | strip -}}
-            {{- author.last | strip -}}
+            {{ author.first | strip }}
+            {{ author.last | strip }}
           {% endif %}
         {% endif %}
       {% endfor %}
